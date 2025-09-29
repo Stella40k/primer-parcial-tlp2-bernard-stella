@@ -1,3 +1,6 @@
+import { body } from "express-validator";
+import { AssetModel } from "../../models/mongoose/asset.model.js";
+
 export const createAssetValidation = [
   // TODO: completar las validaciones para crear un recurso
  body("inventory_number")
