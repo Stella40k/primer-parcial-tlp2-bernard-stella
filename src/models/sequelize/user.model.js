@@ -1,4 +1,5 @@
 import { DataTypes } from "sequelize";
+import { UserModel } from "../mongoose/user.model.js";
 
 export const UserModel = sequelize.define("User", {
   username: { type: DataTypes.STRING(20), allowNull: false, unique: true },

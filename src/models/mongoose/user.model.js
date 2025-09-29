@@ -1,4 +1,4 @@
-import { model, Schema } from "mongoose";
+import { model, Schema, Types } from "mongoose";
 
 // TODO: completar relacion embebida y configurar el virtuals para el populate inverso con assets
 
@@ -19,6 +19,7 @@ const UserSchema = new Schema(
       default: "secretary",
     },
     deletedAt: { type: Date, default: null },
+    //*
     profile:{
       employee_number:{
         type: String, 
